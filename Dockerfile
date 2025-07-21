@@ -1,4 +1,5 @@
 FROM tomcat:latest
-MAINTAINER Ashok <ashok@oracle.coms>
+MAINTAINER Ashok 
+WORKDIR /usr/app/
 EXPOSE 8080
-COPY target/maven-web-app.war /usr/local/tomcat/webapps/maven-web-app.war
+COPY target/maven-web-app.war /usr/app/
